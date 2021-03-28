@@ -27,7 +27,7 @@ class StoreContainer extends React.Component {
     return (
       <div className="store">
         <h1> Product list </h1>
-        {productList}
+        <div class="cardContainer">{productList}</div>
       </div>
     );
   }

@@ -1,3 +1,4 @@
+import "../style/styles.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -14,12 +15,10 @@ class ProductCard extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <li>
-            <Link to={`/store/${this.state.productId}`}>{this.state.name}</Link>
-          </li>
-        </div>
+      <div class="card">
+        <Link to={`/store/${this.state.productId}`}>
+          <div>{this.state.name}</div>
+        </Link>
       </div>
     );
   }
